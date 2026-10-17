@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLT Z GG</title>
+  <style>
+    body {
+      margin: 0;
+      background: #080816;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #15153b, #30105a);
+      border-bottom: 2px solid #00f5ff;
+    }
+    h1 {
+      color: #00f5ff;
+      font-size: 42px;
+      text-shadow: 0 0 18px #00f5ff;
+    }
+    main { padding: 30px 15px; }
+    .game {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 25px;
+      background: #15152b;
+      border: 1px solid #8b5cf6;
+      border-radius: 16px;
+      box-shadow: 0 0 18px #6426a055;
+    }
+    button {
+      background: #00f5ff;
+      color: #080816;
+      border: 0;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #score { color: #00f5ff; font-size: 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VOLT Z GG</h1>
+    <p>POWER UP. PLAY HARD. RULE THE GAME.</p>
+  </header>
+  <main>
+    <h2>🎮 GAME ZONE</h2>
+    <div class="game">
+      <h3>⚡ Neon Clicker</h3>
+      <p>Click the button to charge up your score!</p>
+      <p id="score">0</p>
+      <button onclick="addScore()">CHARGE UP!</button>
+    </div>
+    <p>More games coming soon!</p>
+  </main>
+  <script>
+    let score = 0;
+    function addScore() {
+      score++;
+      document.getElementById("score").textContent = score;
+    }
+  </script>
+</body>
+</html>
